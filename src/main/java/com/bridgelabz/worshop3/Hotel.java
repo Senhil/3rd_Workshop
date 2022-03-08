@@ -1,10 +1,12 @@
 package com.bridgelabz.worshop3;
 
+
 public class Hotel {
 
     private String hotelName;
     private int rating;
     private double regularCustomerCost;
+
     public Hotel() {
     }
 
@@ -40,13 +42,7 @@ public class Hotel {
 
     @Override
     public String toString() {
-        return "Hotel [hotelName=" + hotelName + ", rating=" + rating + ", regularCustomerCost=" + regularCustomerCost
-                + "]";
+        return "Hotels [hotelName=" + hotelName + ", rating=" + rating + ", Regular Customer Cost="+ regularCustomerCost +"]\n";
     }
 
 }
-
-
-
-
-
