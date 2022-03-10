@@ -8,15 +8,17 @@ import java.util.ArrayList;
 
 public class HotelReservation  implements HotelReservationIF
 {
-    ArrayList<Hotel> hotelList = new ArrayList<>();
+    ArrayList<Hotel> hotelList = new ArrayList<Hotel>();
     Hotel hotel ;
 
-    public void addHotel(String hotelName, int rating, double weekdayRate, double weekndRate) {
+    public void addHotel(String hotelName, int rating, double weekdayRate, double weekndRate,double weekdayCustomerRate,double weekendCustomerRate) {
         hotel = new Hotel();
         hotel.setHotelName(hotelName);
         hotel.setRating(rating);
         hotel.setWeekDayRate(weekdayRate);
         hotel.setWeekendRate(weekndRate);
+        hotel.setWeekdayRewardCustomerRate(weekendCustomerRate);
+        hotel.setWeekendRewardCustomerRate(weekendCustomerRate);
         hotelList.add(hotel);
     }
 
@@ -108,4 +110,5 @@ public class HotelReservation  implements HotelReservationIF
         System.out.println("Best Rated Hotel : " + ratedHotel + ", having rating: "+maxRating+" , Total Rates: " + rate);
         return ratedHotel;
     }
+
 }
