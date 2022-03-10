@@ -3,7 +3,7 @@ package com.bridgelabz.worshop3;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class HotelReservationMain
+public class hotelReservationMain
 {
     public static void main(String[] args)
     {
@@ -15,5 +15,6 @@ public class HotelReservationMain
         LocalDate startDate = LocalDate.of(2020, Month.SEPTEMBER, 10);
         LocalDate endDate = LocalDate.of(2020, Month.SEPTEMBER, 11);
         hotelReservation.getCheapestHotel(startDate, endDate);
+        hotelReservation.getBestRatedHotel(startDate, endDate);
     }
 }
