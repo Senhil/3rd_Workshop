@@ -62,6 +62,7 @@ class hotelReservationMainTest
         String hotelName = hotelReservation.getCheapestHotel(startDate, endDate);
         assertEquals("Lakewood", hotelName);
     }
+
     @Test
     public void givenHotelDetails_shouldReturnBestRatedHotel(){
 
@@ -75,3 +76,4 @@ class hotelReservationMainTest
     }
 
 }
+
