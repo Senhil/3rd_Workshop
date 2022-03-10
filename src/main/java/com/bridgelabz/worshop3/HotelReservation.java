@@ -1,21 +1,20 @@
 package com.bridgelabz.worshop3;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Optional;
+
+import java.util.ArrayList;
 
 public class HotelReservation  implements HotelReservationIF
 {
     ArrayList<Hotel> hotelList = new ArrayList<>();
     Hotel hotel;
 
-    public void addHotel(String hotelName, int rating, double regularCustomerRate) {
-
+    public void addHotel(String hotelName, int rate, double weekdayRate, double weekndRate) {
         hotel = new Hotel();
         hotel.setHotelName(hotelName);
-        hotel.setRating(rating);
-        hotel.setRegularCustomerCost(regularCustomerRate);
+        hotel.setRate(rate);
+        hotel.setWeekDayRate(weekdayRate);
+        hotel.setWeekendRate(weekndRate);
         hotelList.add(hotel);
     }
 
@@ -31,16 +30,4 @@ public class HotelReservation  implements HotelReservationIF
         return hotelList;
     }
 
-    @Override
-    public void addHotel() {
-
-    }
-
-    public Hotel getCheapestHotel(LocalDate startDate, LocalDate endDate) {
-
-        Optional<Hotel> resultList = hotelList.stream().min(Comparator.comparing(Hotel::getRegularCustomerCost));
-        return resultList.get();
-    }
 }
-
-
