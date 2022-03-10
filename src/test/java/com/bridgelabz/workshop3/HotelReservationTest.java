@@ -75,6 +75,7 @@ class HotelReservationMainTest
         String hotelName = hotelReservation.getCheapestHotel(startDate, endDate,"reward");
         assertEquals("Bridgewood", hotelName);
     }
+
     @Test
     public void givenHotelDetails_shouldReturnBestRatedHotel(){
 
@@ -86,6 +87,7 @@ class HotelReservationMainTest
         String hotelName = hotelReservation.getBestRatedHotel(startDate, endDate);
         assertEquals("Bridgewood", hotelName);
     }
+  
     @Test
     public void givenHotelDetails_WhenNull_ShouldThrowHotelReservationException() {
 
@@ -124,3 +126,7 @@ class HotelReservationMainTest
 
     }
 }
+}
+
+}
+
