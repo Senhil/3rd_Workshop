@@ -1,12 +1,12 @@
 package com.bridgelabz.worshop3;
 
-public class HotelReservationException extends RuntimeException {
-
-    enum ExceptionType {
+public class HotelReservationException extends RuntimeException
+{
+    public enum ExceptionType{
         ENTERED_NULL, ENTERED_EMPTY;
     }
 
-    ExceptionType type;
+    public ExceptionType type;
 
     public HotelReservationException(ExceptionType type, String message) {
 

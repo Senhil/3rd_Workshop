@@ -7,8 +7,7 @@ public class Hotel {
     private double weekendRate;
     private double weekdayRewardCustomerRate;
     private double weekendRewardCustomerRate;
-    public Hotel() {
-    }
+    public Hotel() {}
 
     public Hotel(String hotelName, int rating, double weekDayRate, double weekendRate,double weekdayRewardCustomerRate,double weekendRewardCustomerRate) {
         this.hotelName = hotelName;
