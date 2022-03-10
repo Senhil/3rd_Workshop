@@ -3,7 +3,7 @@ package com.bridgelabz.worshop3;
 import java.time.LocalDate;
 import java.time.Month;
 
-public class HotelReservationMain
+public class hotelReservationMain
 {
     public static void main(String[] args)
     {

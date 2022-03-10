@@ -9,7 +9,7 @@ import java.time.Month;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class HotelReservationMainTest
+class hotelReservationMainTest
 {
     @Test
     public void givenHotelList_WhenAdded_shouldReturnProperHotelName(){
