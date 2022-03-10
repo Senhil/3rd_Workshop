@@ -1,0 +1,49 @@
+package com.bridgelabz.worshop3;
+
+public class Hotel
+{
+    private String hotelName;
+    private int rate;
+    private double weekDayRate;
+    private double weekendRate;
+    public Hotel() {
+    }
+
+    public String getHotelName() {
+        return hotelName;
+    }
+
+    public void setHotelName(String hotelName) {
+        this.hotelName = hotelName;
+    }
+
+    public int getRate() {
+        return rate;
+    }
+
+    public void setRate(int rate) {
+        this.rate = rate;
+    }
+
+    public double getWeekDayRate() {
+        return weekDayRate;
+    }
+
+    public void setWeekDayRate(double weekDayRate) {
+        this.weekDayRate = weekDayRate;
+    }
+
+    public double getWeekendRate() {
+        return weekendRate;
+    }
+
+    public void setWeekendRate(double weekendRate) {
+        this.weekendRate = weekendRate;
+    }
+
+    @Override
+    public String toString() {
+        return "Hotel [hotelName=" + hotelName + ", rating=" + rate + ", weekDayRate=" + weekDayRate
+                + ", weekendRate=" + weekendRate + "]";
+    }
+}
